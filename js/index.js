@@ -108,7 +108,12 @@ $(function(){
       url: "http://csga.com.ng/engine/view.php",
       cache: false,
       success: function(resp) {
-           $(".view").load("http://csga.com.ng/engine/view.php")
+           if(resp == true){
+                    location.href = "view.html"
+            }else{
+                $(".check").text(resp).css("color","red")
+                $(".close").click()
+            }
         }
     })
 })
