@@ -61,7 +61,7 @@ $("#ad-form").submit(function(){
       cache: false,
       success: function(resp) {
             if(resp == true){
-                    location.href = "http://csga.com.ng/engine/view.php"
+                    $(".view").load("http://csga.com.ng/engine/view.php")
             }else{
                 $(".check").text(resp).css("color","red")
                 $(".close").click()
