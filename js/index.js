@@ -70,8 +70,8 @@ $("#ad-form").submit(function(){
     })
     return false
 })
-
-$(function(){
+$(".view").load("http://csga.com.ng/engine/view.php")
+/*$(function(){
   $.ajax({
       type: "POST",
       url: "http://csga.com.ng/engine/view.php",
@@ -82,7 +82,7 @@ $(function(){
           }
         }
     })
-})
+})*/
 
 $(function (){
   function cameraSuccess(imagedata){
