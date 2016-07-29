@@ -78,7 +78,7 @@ $(function(){
       cache: false,
       success: function(resp) {
             if(resp){
-              $(".view").load(resp)
+              $(".view").html(resp)
           }
         }
     })
