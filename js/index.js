@@ -77,9 +77,7 @@ $(function(){
       url: "http://csga.com.ng/engine/view.php",
       cache: false,
       success: function(resp) {
-            if(resp){
-             location.href = "../engine/view.php"
-          }
+           $(".view").load("http://csga.com.ng/engine/view.php")
         }
     })
 })
