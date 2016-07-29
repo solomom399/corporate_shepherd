@@ -70,19 +70,19 @@ $("#ad-form").submit(function(){
     })
     return false
 })
-$(".view").load("http://csga.com.ng/engine/view.php")
-/*$(function(){
+//$(".view").load("http://csga.com.ng/engine/view.php")
+$(function(){
   $.ajax({
       type: "POST",
       url: "http://csga.com.ng/engine/view.php",
       cache: false,
       success: function(resp) {
             if(resp){
-              $(".view").html(resp)
+             location.href = "../engine/view.php"
           }
         }
     })
-})*/
+})
 
 $(function (){
   function cameraSuccess(imagedata){
