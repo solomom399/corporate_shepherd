@@ -48,7 +48,7 @@ $("#a-form").submit(function(){
 })
 
 
-
+$(".view").load("http://csga.com.ng/engine/view.php")
 $("#ad-form").submit(function(){
   $(".run").click()
     $.ajax({
@@ -61,7 +61,7 @@ $("#ad-form").submit(function(){
       cache: false,
       success: function(resp) {
             if(resp == true){
-                    $(".view").load("http://csga.com.ng/engine/view.php")
+                    location.href = "view.html"
             }else{
                 $(".check").text(resp).css("color","red")
                 $(".close").click()
