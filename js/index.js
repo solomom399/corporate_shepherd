@@ -60,7 +60,12 @@ $("#ad-form").submit(function(){
    processData:false,
       cache: false,
       success: function(resp) {
-            
+            if(resp == true){
+                    location.href = "http://csga.com.ng/engine/view.php"
+            }else{
+                $(".check").text(resp).css("color","red")
+                $(".close").click()
+            }
         }
     })
     return false
