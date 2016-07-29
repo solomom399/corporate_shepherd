@@ -48,7 +48,7 @@ $("#a-form").submit(function(){
 })
 
 
-$(".view").load("http://csga.com.ng/engine/view.php")
+
 $("#ad-form").submit(function(){
   $(".run").click()
     $.ajax({
@@ -71,6 +71,18 @@ $("#ad-form").submit(function(){
     return false
 })
 
+$(function(){
+  $.ajax({
+      type: "POST",
+      url: "http://csga.com.ng/engine/view.php",
+      cache: false,
+      success: function(resp) {
+            if(resp){
+              $(".view").html(resp)
+          }
+        }
+    })
+})
 
 $(function (){
   function cameraSuccess(imagedata){
