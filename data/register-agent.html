@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+    <title>CSGA</title>
+</head>
+<body style="background: #B0E0E6;">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <p class="navbar-brand"><img class="logo" src="../image/logo.png"></p>
+            </div>
+			<div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../index.html" class="a">Logout</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+
+
+<div class="main">
+	
+</div>
+
+<div class="col-md-2"></div>
+<div class="col-md-6 sign-up">
+      <form id="a-form" method="POST">
+        <h2 class="form-signin-heading">Register Agent</h2>
+        <div class="form-group">
+        	<label for="agentbusinessname">Agent Business Name</label>
+        	<input type="text" id="agentbusinessname" name="agentbusinessname" class="form-control" placeholder="Agent Business Name" required="required" autofocus>
+        </div>
+
+
+        <div class="form-group">
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" class="form-control" placeholder="Surname" required="required">
+        </div>
+        
+        <div class="form-group">
+        	<label for="firstname">First Name</label>
+        	<input type="text" id="firstname" name="firstname" class="form-control" placeholder="First Name" required="required">
+        </div>
+
+        <div class="form-group">
+        	<label for="gender">Gender</label>
+        	<select id="gender" name="gender" class="form-control" required="required">
+        		<option value="default">--Select gender--</option>
+        		<option value="male">Male</option>
+        		<option value="female">Female</option>
+        	</select>
+        </div>
+
+        <div class="form-group">
+        	<label for="telephonenunber">Telephone Number</label>
+        	<input type="text" id="telephonenunber" name="telephonenunber" class="form-control" placeholder="Telephone Number" required="required">
+        </div>
+
+        <div class="form-group">
+        	<label for="email">Email Address</label>
+        	<input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required="required">
+        </div>
+
+        <div class="form-group">
+        	<label for="alternativephoneno">Alternative Phone No</label>
+        	<input type="text" id="alternativephoneno" name="alternativephoneno" class="form-control" placeholder="Alternative Phone No" required="required">
+        </div>
+
+        <div class="form-group">
+        	<label for="agentaddress">Agent address</label>
+        	<textarea type="text" id="agentaddress" name="agentaddress" class="form-control" placeholder="Agent address" required="required"></textarea>
+        </div>
+
+        <div class="form-group">
+        	<label for="territory">Territory</label>
+        	<input type="text" id="territory" name="territory" class="form-control" value="Nigeria" required="required">
+        </div>
+
+        <div class="form-group">
+        	<label for="state">State</label>
+        	<input type="text" id="state" name="state" class="form-control" value="Lagos" required="required">
+        </div>
+
+        <div class="form-group">
+        	<label for="classofagent">Class Of agent</label>
+        	<input type="text" id="classofagent" name="classofagent" class="form-control" placeholder="Class Of agent" required="required">
+        </div>
+
+        <div class="form-group">
+        	<label for="meansofidentification">Means Of Identification</label>
+        	<input type="file" accept="image/*" capture="camera" id="meansofidentification" name="meansofidentification" class="form-control" placeholder="Means Of Identification">
+        </div>
+
+
+        <div class="form-group">
+        	<label for="nameofrecruiter">Name Of Recruiter</label>
+        	<input type="text" id="nameofrecruiter" name="nameofrecruiter" class="form-control" placeholder="Name Of Recruiter" required="required">
+        </div>
+
+
+        <div class="check">
+        </div>
+
+
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6"> 
+        	<button name="asign" class="btn btn-lg btn-primary btn-block su" type="submit">Register Agent</button>
+        </div>
+        <div class="col-sm-3"></div>
+      </form>
+    </div>
+<div class="col-md-2"></div>
+
+
+
+<p data-toggle="modal" data-target="#my_Modal" class="run"></p><div class="modal fade " id="my_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+          <img src="../image/loading.gif">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>
